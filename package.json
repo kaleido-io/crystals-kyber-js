@@ -24,7 +24,11 @@
   },
   "homepage": "https://github.com/kaleido-io/crystals-kyber-js#readme",
   "files": [
-    "npm/crystals-kyber-js/",
+    "deno.json",
+    "dnt.ts",
+    "mod.ts",
+    "src/",
+    "build.js",
     "*.md"
   ]
 }
