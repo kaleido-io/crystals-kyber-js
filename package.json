@@ -8,8 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js",
-    "postinstall": "npx deno task dnt && npx deno task npm-link && npx deno task npm-pack"
+    "postinstall": "npx tsc"
   },
   "repository": {
     "type": "git",
@@ -22,13 +21,5 @@
   "bugs": {
     "url": "https://github.com/kaleido-io/crystals-kyber-js/issues"
   },
-  "homepage": "https://github.com/kaleido-io/crystals-kyber-js#readme",
-  "files": [
-    "deno.json",
-    "dnt.ts",
-    "mod.ts",
-    "src/",
-    "build.js",
-    "*.md"
-  ]
+  "homepage": "https://github.com/kaleido-io/crystals-kyber-js#readme"
 }
