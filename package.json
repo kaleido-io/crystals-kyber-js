@@ -1,33 +1,14 @@
 {
-  "name": "crystals-kyber",
-  "version": "1.0.0",
-  "description": "<h1 align=\"center\">mlkem / crystals-kyber-js</h1>",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx --yes deno@latest task dnt:crystals-kyber-js",
-    "postinstall": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kaleido-io/crystals-kyber-js.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/kaleido-io/crystals-kyber-js/issues"
-  },
-  "homepage": "https://github.com/kaleido-io/crystals-kyber-js#readme",
-  "files": [
-    "deno.json",
-    "dnt.ts",
-    "mod.ts",
-    "src/",
-    "*.md"
-  ]
+  "name": "crystals-kyber-js",
+  "version": "2.3.1",
+  "main": "./npm/crystals-kyber-js/script/mod.js",
+  "module": "./npm/crystals-kyber-js/esm/mod.js",
+  "types": "./npm/crystals-kyber-js/types/mod.d.ts",
+  "exports": {
+    ".": {
+      "import": "./npm/crystals-kyber-js/esm/mod.js",
+      "require": "./npm/crystals-kyber-js/script/mod.js",
+      "types": "./npm/crystals-kyber-js/types/mod.d.ts"
+    }
+  }
 }
