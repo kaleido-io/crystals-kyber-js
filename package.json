@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx --yes deno@latest task --config deno.json dnt:crystals-kyber-js",
+    "build": "node build.js",
     "postinstall": "npm run build"
   },
   "repository": {
@@ -24,10 +24,7 @@
   },
   "homepage": "https://github.com/kaleido-io/crystals-kyber-js#readme",
   "files": [
-    "deno.json",
-    "dnt.ts",
-    "mod.ts",
-    "src/",
+    "npm/crystals-kyber-js/",
     "*.md"
   ]
 }
