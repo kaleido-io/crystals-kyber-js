@@ -8,8 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx --yes deno@latest task dnt:crystals-kyber-js",
-    "postinstall": "npm run build"
+    "postinstall": "npx --yes deno@latest run -A dnt.ts crystals-kyber-js"
   },
   "repository": {
     "type": "git",
