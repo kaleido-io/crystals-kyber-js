@@ -6,7 +6,7 @@ process.chdir(__dirname);
 
 try {
   // Run the deno task
-  execSync('deno task dnt:crystals-kyber-js', { stdio: 'inherit' });
+  execSync('npx --yes deno@latest run -A dnt.ts crystals-kyber-js', { stdio: 'inherit' });
 } catch (error) {
   console.error('Build failed:', error.message);
   process.exit(1);
