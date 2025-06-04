@@ -1,4 +1,4 @@
-import { shake256 } from "./deps.ts";
+import { shake256 } from "./deps";
 
 export function byte(n: number): number {
   return n % 256;

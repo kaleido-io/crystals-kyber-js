@@ -1,5 +1,5 @@
-import type { MlKemBase } from "../src/mlKemBase.ts";
-import { shake128 } from "../src/deps.ts";
+import type { MlKemBase } from "../src/mlKemBase";
+import { shake128 } from "../src/deps";
 
 type GetRandomValuesInputType = Parameters<
   typeof Crypto.prototype.getRandomValues

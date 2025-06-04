@@ -1,5 +1,5 @@
 import * as kyber from "npm:crystals-kyber";
-import { MlKem512 } from "../mod.ts";
+import { MlKem512 } from "../mod";
 
 Deno.bench("deriveKeyPair", async (b) => {
   const ctx = new MlKem512();
