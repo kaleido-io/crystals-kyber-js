@@ -309,7 +309,7 @@ export class MlKemBase {
    */
   private _deriveCpaKeyPair(cpaSeed: Uint8Array): [Uint8Array, Uint8Array] {
     const [publicSeed, noiseSeed] = g(cpaSeed, new Uint8Array([this._k]));
-    const a = this._sampleMatrix(publicSeed, false);
+    const a = this.sampleMatrix(publicSeed, false);
     const s = this._sampleNoise1(noiseSeed, 0, this._k);
     const e = this._sampleNoise1(noiseSeed, this._k, this._k);
 
@@ -373,7 +373,7 @@ export class MlKemBase {
       throw new Error("invalid encapsulation key");
     }
     const rho = pk.subarray(this._skSize);
-    const a = this._sampleMatrix(rho, true);
+    const a = this.sampleMatrix(rho, true);
     const r = this._sampleNoise1(seed, 0, this._k);
     const e1 = this._sampleNoise2(seed, this._k, this._k);
     const e2 = this._sampleNoise2(seed, this._k * 2, 1)[0];
@@ -447,7 +447,7 @@ export class MlKemBase {
    * @param transposed - A flag indicating whether the matrix should be transposed or not.
    * @returns The generated sample matrix.
    */
-  private _sampleMatrix(
+  public sampleMatrix(
     seed: Uint8Array,
     transposed: boolean,
   ): Array<Array<Array<number>>> {
@@ -751,7 +751,7 @@ function polyToBytes(a: Array<number>): Uint8Array {
  * @param a The Uint8Array to convert to a polynomial.
  * @returns An array of numbers representing the polynomial.
  */
-function polyFromBytes(a: Uint8Array): Array<number> {
+export function polyFromBytes(a: Uint8Array): Array<number> {
   const r = new Array<number>(384).fill(0);
   for (let i = 0; i < N / 2; i++) {
     r[2 * i] = int16(
