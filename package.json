@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "npx --yes deno@latest run -A dnt.ts crystals-kyber-js"
+    "build": "npx --yes deno@latest task dnt:crystals-kyber-js",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/kaleido-io/crystals-kyber-js/issues"
   },
-  "homepage": "https://github.com/kaleido-io/crystals-kyber-js#readme"
+  "homepage": "https://github.com/kaleido-io/crystals-kyber-js#readme",
+  "files": [
+    "deno.json",
+    "dnt.ts",
+    "mod.ts",
+    "src/",
+    "*.md"
+  ]
 }
