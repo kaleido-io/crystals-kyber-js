@@ -2,12 +2,12 @@ import { assertEquals, assertRejects } from "@std/assert";
 import { describe, it } from "@std/testing/bdd";
 import * as fs from "node:fs";
 import * as readline from "node:readline";
-import { shake128 } from "../src/deps";
+import { shake128 } from "../src/deps.ts";
 
-import { MlKem1024, MlKem512, MlKem768, MlKemError } from "../mod";
-import { loadCrypto } from "../src/utils";
-import { bytesToHex, hexToBytes, parseKAT, testVectorPath } from "./utils";
-import { getDeterministicMlKemClass } from "./drng";
+import { MlKem1024, MlKem512, MlKem768, MlKemError } from "../mod.ts";
+import { loadCrypto } from "../src/utils.ts";
+import { bytesToHex, hexToBytes, parseKAT, testVectorPath } from "./utils.ts";
+import { getDeterministicMlKemClass } from "./drng.ts";
 
 function concat(a: Uint8Array, b: Uint8Array): Uint8Array {
   const ret = new Uint8Array(a.length + b.length);

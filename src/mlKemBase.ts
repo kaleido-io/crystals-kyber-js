@@ -3,10 +3,10 @@
  * which was deveploped under the MIT licence below:
  * https://github.com/antontutoveanu/crystals-kyber-javascript/blob/main/LICENSE
  */
-import { sha3_256, sha3_512, shake128, shake256 } from "./deps";
+import { sha3_256, sha3_512, shake128, shake256 } from "./deps.ts";
 
-import { N, NTT_ZETAS, NTT_ZETAS_INV, Q, Q_INV } from "./consts";
-import { MlKemError } from "./errors";
+import { N, NTT_ZETAS, NTT_ZETAS_INV, Q, Q_INV } from "./consts.ts";
+import { MlKemError } from "./errors.ts";
 import {
   byte,
   byteopsLoad32,
@@ -18,7 +18,7 @@ import {
   prf,
   uint16,
   uint32,
-} from "./utils";
+} from "./utils.ts";
 
 /**
  * Represents the base class for the ML-KEM key encapsulation mechanism.

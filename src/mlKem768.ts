@@ -3,8 +3,8 @@
  * which was deveploped under the MIT licence below:
  * https://github.com/antontutoveanu/crystals-kyber-javascript/blob/main/LICENSE
  */
-import { N } from "./consts";
-import { MlKemBase } from "./mlKemBase";
+import { N } from "./consts.ts";
+import { MlKemBase } from "./mlKemBase.ts";
 
 /**
  * Represents the MlKem768 class, which extends the MlKemBase class.

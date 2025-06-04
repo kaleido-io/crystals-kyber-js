@@ -3,9 +3,9 @@
  * which was deveploped under the MIT licence below:
  * https://github.com/antontutoveanu/crystals-kyber-javascript/blob/main/LICENSE
  */
-import { N, Q } from "./consts";
-import { MlKemBase } from "./mlKemBase";
-import { byte, int16, uint16, uint32 } from "./utils";
+import { N, Q } from "./consts.ts";
+import { MlKemBase } from "./mlKemBase.ts";
+import { byte, int16, uint16, uint32 } from "./utils.ts";
 
 /**
  * Represents the MlKem1024 class, which extends the MlKemBase class.

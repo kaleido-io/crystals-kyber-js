@@ -148,7 +148,7 @@ import {
   Kyber1024,
   Kyber512,
   Kyber768,
-} from "https://deno.land/x/crystals_kyber@<SEMVER>/mod";
+} from "https://deno.land/x/crystals_kyber@<SEMVER>/mod.ts";
 ```
 
 ### Cloudflare Workers

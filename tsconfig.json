@@ -1,21 +1,15 @@
 {
   "compilerOptions": {
+    "module": "es2022",
     "target": "es2022",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true
-  },
-  "paths": {
-      "@noble/*": ["./node_modules/@noble/*"]
+    "paths": {
+      "@noble/*": ["./npm/crystals-kyber-js/node_modules/@noble/*"]
     },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "**/*.test.ts"],
+    "noEmit": true,
+    "allowImportingTsExtensions": true
+  },
+  "include": [
+    "mod.ts",
+    "src/**/*"
+  ]
 }
