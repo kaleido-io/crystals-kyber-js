@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/kaleido-io/crystals-kyber-js/issues"
   },
-  "homepage": "https://github.com/kaleido-io/crystals-kyber-js#readme"
+  "homepage": "https://github.com/kaleido-io/crystals-kyber-js#readme",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
 }
