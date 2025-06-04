@@ -11,8 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
     "clean": "rm -rf dist",
-    "rebuild": "npm run clean && npm run rebuild",
-    "prepublishOnly": "npm run rebuild"
+    "rebuild": "npm run clean && npm run build",
+    "postinstall": "npm run rebuild"
   },
   "repository": {
     "type": "git",
