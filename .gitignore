@@ -130,4 +130,5 @@ dist
 .pnp.*
 
 # @deno/dnt output directory.
-npm/
+# In this fork we distribute the built npm module.
+# npm/
